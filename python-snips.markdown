@@ -42,6 +42,8 @@ for food, count in food_counter.items():
 The alternative would like:
 
 ```
+
+
 dict_counter = {}
 for food in ['spam','spam','eggs','spam']
   if not food in dict_counter:
@@ -51,6 +53,52 @@ for food in ['spam','spam','eggs','spam']
 for food, count in dict_counter.items():
   print(food,count)
 ```
+
+### Random Module ###
+
+Choice is simple for selecting a single item:
+
+``` from random import choice 
+
+fusion = ['wasabi', 'sushi', 'rice', 'tofu', 'sesame']
+
+print(choice(fusion)) 
+print(choice(fusion))
+print(choice(fusion))
+
+#Sushi
+#Wasabi
+#rice
+
+```
+
+Another is sample:
+
+```
+from random import sample 
+
+numbers = [23, 45, 65, 76, 33, 45, 11, 22, 33]
+
+nums = sample(numbers, 3)
+
+print(nums)
+
+#[45,76,33]
+
+```
+
+Then there is randin() and randrange
+```
+from random import randint
+
+print(randint(38,74))
+
+from random import randrange
+
+print(randrange(38, 78))
+```
+
+With the above randrange() is half-open interval and doesn't include the last interval. 
 
 
 
